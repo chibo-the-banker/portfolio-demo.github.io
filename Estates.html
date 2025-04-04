@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: linear-gradient(0deg, rgb(247, 247, 247) 23.8%, rgb(252, 221, 221) 92%);
+            margin: 60px;
+            padding: 40px;
+        }
+
+        button{
+            margin-left: 40px;
+            border-radius: 20px;
+            box-shadow: 1px;
+            background-color: #ae747a;
+            margin: 40px;
+            cursor: pointer;
+            border: #FFCDD2;
+        }
+
+        img{
+            padding: 40px;
+            display: flex;
+             box-shadow: 5px 5px  #9a7275;
+            transition: box-shadow 0.3s;
+        }
+        img:hover{
+          color: #5c3438; 
+            
+        }
+
+        p{
+            font-size: larger;
+        }
+        .keyWords{
+            color: #91585d;
+        }
+        .wikiLink{
+            font-weight: bolder;
+            color: #5c3438;
+        }
+
+        .homeLink{
+            color: #5c3438;
+            text-decoration: none;
+        }
+
+        .homeLink:hover {
+            color: #FFCDD2;
+            transition: 0.4s;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>
+       <strong> Sprawl Estates </strong>
+    </h1>
+    <h2><em>
+        Get the experience you always wanted at home</em>
+    </h2>
+    <p>The homes we provide bring both <span class="keyWords">comfort </span> and security. a good place to raise your chilren at affordable prices for small and young families. <hr /> homes are already furnished. you can move in at anytime. this envirnment specially caters for sngle parents who need assistance in looking
+        after their young.
+
+        The <span class="keyWords">period is flexible </span>, to allow you to move in or out at any moment's notice. On the ground floor,<span> offices</span> to  rent are available, they are reserved
+        for the tenants. We provide everything for you from home to well rounded services.
+    </p>
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/155/199/original/download.jpeg?1737317710" alt="under the stairs" width="400"> <br>
+<button class="property-Info">Property Laws</button>
+<hr />
+<span class="wikiLink"> Research about <a href="https://en.wikipedia.org/wiki/Home" target="_blank" class="homeLink">homes</a></span>
+<script>
+    function property(){
+        let name=prompt("Greetings, what is your name?");
+        let bedroom=prompt("How many bedrooms are you looking for?");
+        let office=prompt("Would you like to include an office in your terms?(yes/no)");
+       let a = name.length;
+        if (a<3){
+            return alert("Please put your name, use more than two letters");
+        }
+        else {
+            return alert("Welcome "+name+"! We will contact you soon!");
+        }
+        
+    }
+    let propertyInfo=document.querySelector(".property-Info");
+    propertyInfo.addEventListener("click",property);
+    
+</script>
+</body>
+</html>
